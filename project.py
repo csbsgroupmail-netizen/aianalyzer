@@ -5,7 +5,7 @@ import easyocr
 import numpy as np
 from PIL import Image
 from openai import OpenAI
-
+api_key = st.secrets["233b6aa7a7mshe7cab71ea3d65cep120b5bjsn51f791853f4a"]
 # Initialize EasyOCR Reader (2026 standard for simple local OCR)
 reader = easyocr.Reader(['en'])
 
@@ -54,3 +54,4 @@ if uploaded_file and st.button("Analyze"):
             )
             st.subheader(f"Results for {role}")
             st.write(response.choices.message.content)
+
