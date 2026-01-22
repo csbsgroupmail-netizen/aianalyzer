@@ -1,4 +1,7 @@
 streamlit
 pypdf
 python-docx
-ollama
+openai
+easyocr
+Pillow
+numpy
